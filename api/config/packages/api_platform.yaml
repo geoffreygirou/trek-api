@@ -1,0 +1,19 @@
+api_platform:
+    title: Trek API
+    version: 1.0.0
+    # Mercure integration, remove if unwanted
+    mercure: ~
+    # Good cache defaults for REST APIs
+    defaults:
+        route_prefix: /api
+        stateless: true
+        cache_headers:
+            vary: ['Content-Type', 'Authorization', 'Origin']
+        extra_properties:
+            standard_put: true
+    # Swagger/OpenAPI documentation
+    swagger:
+        api_keys:
+            JWT:
+                name: Authorization
+                type: header
