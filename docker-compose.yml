@@ -76,7 +76,7 @@ services:
       - target: 5432
         published: 5432
         protocol: tcp
-
+# pgAdmin in available for demo convenience but should not be used in production
   pgadmin:
     container_name: pgadmin4_container
     image: dpage/pgadmin4

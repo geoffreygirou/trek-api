@@ -46,16 +46,15 @@ final class TrekFactory extends ModelFactory
      */
     protected function getDefaults(): array
     {
-        $slug = self::faker()->text(10);
         return [
             'name' => self::faker()->text(30),
-            'slug' => $slug,
+            'slug' => self::faker()->text(10),
             'description' => self::faker()->text(255),
             'length' => self::faker()->text(10),
             'duration' => self::faker()->text(10),
             'difficulty' => self::faker()->text(10),
             'maxElevation' => self::faker()->text(10),
-            'imagePath' => "/img/treks/$slug.png",
+            'imagePath' => "/assets/img/treks/la-haute-route.png",
         ];
     }
 
