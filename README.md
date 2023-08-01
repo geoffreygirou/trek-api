@@ -30,6 +30,8 @@ make up
 Either you can use Postman or the Swagger UI.
 Visit security.yml file for more details about authentication.
 
+Refer to [real json data](https://github.com/geoffreygirou/trek-api/blob/master/api/src/DataFixtures/manual-fixtures.json) if needed
+
 ### Swagger UI
 
 https://localhost/docs
